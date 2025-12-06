@@ -1,0 +1,49 @@
+[17:20:15] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 3.4.0-SNAPSHOT (git-a046f700-b557)...
+[17:20:15] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
+[17:20:15] [main/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
+[17:20:15] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
+[17:20:16] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin server-cloud-registry 0.1.0-SNAPSHOT by CommandJoo
+[17:20:16] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 2 plugins
+[17:20:16] [Netty epoll Boss #0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[17:20:16] [main/INFO] [com.velocitypowered.proxy.Velocity]: Done (1,1s)!
+[17:20:16] [Server Registry - Task Executor #1/INFO] [de.johannes.VelocityCloud]: Server: standard can't be unregistered (doesn't exist).
+[17:21:38] [Server Registry - Task Executor #1/WARN] [de.johannes.VelocityCloud]: Unable to sync servers, couldn't connect to cloud!
+[17:21:40] [Server Registry - Task Executor #1/WARN] [de.johannes.VelocityCloud]: Unable to sync servers, couldn't connect to cloud!
+[17:21:42] [Server Registry - Task Executor #1/WARN] [de.johannes.VelocityCloud]: Unable to sync servers, couldn't connect to cloud!
+[17:21:44] [Server Registry - Task Executor #1/WARN] [de.johannes.VelocityCloud]: Unable to sync servers, couldn't connect to cloud!
+[17:23:34] [Server Registry - Task Executor #1/WARN] [de.johannes.VelocityCloud]: Unable to sync servers, couldn't connect to cloud!
+[17:23:36] [Server Registry - Task Executor #1/WARN] [de.johannes.VelocityCloud]: Unable to sync servers, couldn't connect to cloud!
+[17:24:14] [Server Registry - Task Executor #1/WARN] [de.johannes.VelocityCloud]: Unable to sync servers, couldn't connect to cloud!
+[17:24:16] [Server Registry - Task Executor #1/WARN] [de.johannes.VelocityCloud]: Unable to sync servers, couldn't connect to cloud!
+[17:24:18] [Server Registry - Task Executor #1/WARN] [de.johannes.VelocityCloud]: Unable to sync servers, couldn't connect to cloud!
+[17:26:56] [Server Registry - Task Executor #1/WARN] [de.johannes.VelocityCloud]: Unable to sync servers, couldn't connect to cloud!
+[17:26:58] [Server Registry - Task Executor #1/WARN] [de.johannes.VelocityCloud]: Unable to sync servers, couldn't connect to cloud!
+[17:28:13] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] Command_JO (/127.0.0.1:58796) has connected
+[17:28:13] [Netty epoll Worker #0/ERROR] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] Command_JO (/127.0.0.1:58796): unable to connect to server server-5630041
+io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed with error(-111): Verbindungsaufbau abgelehnt: /127.0.0.1:25569
+Caused by: java.net.ConnectException: finishConnect(..) failed with error(-111): Verbindungsaufbau abgelehnt
+	at io.netty.channel.unix.Errors.newConnectException0(Errors.java:166) ~[proxy.jar:3.4.0-SNAPSHOT (git-a046f700-b557)]
+	at io.netty.channel.unix.Errors.handleConnectErrno(Errors.java:131) ~[proxy.jar:3.4.0-SNAPSHOT (git-a046f700-b557)]
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:361) ~[proxy.jar:3.4.0-SNAPSHOT (git-a046f700-b557)]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:764) ~[proxy.jar:3.4.0-SNAPSHOT (git-a046f700-b557)]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:741) ~[proxy.jar:3.4.0-SNAPSHOT (git-a046f700-b557)]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:611) ~[proxy.jar:3.4.0-SNAPSHOT (git-a046f700-b557)]
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.handle(AbstractEpollChannel.java:472) ~[proxy.jar:3.4.0-SNAPSHOT (git-a046f700-b557)]
+	at io.netty.channel.epoll.EpollIoHandler$DefaultEpollIoRegistration.handle(EpollIoHandler.java:317) ~[proxy.jar:3.4.0-SNAPSHOT (git-a046f700-b557)]
+	at io.netty.channel.epoll.EpollIoHandler.processReady(EpollIoHandler.java:515) ~[proxy.jar:3.4.0-SNAPSHOT (git-a046f700-b557)]
+	at io.netty.channel.epoll.EpollIoHandler.run(EpollIoHandler.java:460) ~[proxy.jar:3.4.0-SNAPSHOT (git-a046f700-b557)]
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225) ~[proxy.jar:3.4.0-SNAPSHOT (git-a046f700-b557)]
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196) ~[proxy.jar:3.4.0-SNAPSHOT (git-a046f700-b557)]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1193) ~[proxy.jar:3.4.0-SNAPSHOT (git-a046f700-b557)]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[proxy.jar:3.4.0-SNAPSHOT (git-a046f700-b557)]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[proxy.jar:3.4.0-SNAPSHOT (git-a046f700-b557)]
+	at java.base/java.lang.Thread.run(Thread.java:1474) [?:?]
+[17:28:13] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Command_JO -> server-4132645 has connected
+[17:31:40] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] Command_JO (/127.0.0.1:58796): kicked from server server-4132645: Server closed
+[17:31:40] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Command_JO -> server-4132645 has disconnected
+[17:31:40] [Netty epoll Worker #0/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] Command_JO (/127.0.0.1:58796) has disconnected: No lobby available, try again later
+[17:31:40] [Server Registry - Task Executor #1/WARN] [de.johannes.VelocityCloud]: Unable to sync servers, couldn't connect to cloud!
+[17:31:42] [Server Registry - Task Executor #1/WARN] [de.johannes.VelocityCloud]: Unable to sync servers, couldn't connect to cloud!
+[17:31:44] [Server Registry - Task Executor #1/WARN] [de.johannes.VelocityCloud]: Unable to sync servers, couldn't connect to cloud!
+[17:31:45] [Thread-2/INFO] [com.velocitypowered.proxy.VelocityServer]: Shutting down the proxy...
+[17:31:45] [Thread-2/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:25565

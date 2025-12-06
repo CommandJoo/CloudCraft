@@ -1,0 +1,3 @@
+cd ../../Cloud-Backend
+./gradlew shadowJar
+cd ../server/cloud

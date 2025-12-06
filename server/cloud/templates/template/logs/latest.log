@@ -1,0 +1,43 @@
+[14:56:50] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.1; Arch Linux null) on Linux 6.17.9-arch1-1 (amd64)
+[14:56:50] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.10-117-ver/1.21.10@df4b668 (2025-11-30T22:37:28Z) for Minecraft 1.21.10
+[14:56:51] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[14:56:51] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[14:56:51] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - HeartbeatPlugin (1.0.0)
+[14:56:54] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[14:56:56] [ServerMain/INFO]: Loaded 1461 recipes
+[14:56:56] [ServerMain/INFO]: Loaded 1574 advancements
+[14:56:56] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[14:56:56] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 313,2ms
+[14:56:56] [Server thread/INFO]: Starting minecraft server version 1.21.10
+[14:56:56] [Server thread/INFO]: Loading properties
+[14:56:56] [Server thread/INFO]: This server is running Paper version 1.21.10-117-ver/1.21.10@df4b668 (2025-11-30T22:37:28Z) (Implementing API version 1.21.10-R0.1-SNAPSHOT)
+[14:56:56] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[14:56:56] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[14:56:56] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:56:57] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[14:56:57] [Server thread/INFO]: Default game type: SURVIVAL
+[14:56:57] [Server thread/INFO]: Generating keypair
+[14:56:57] [Server thread/INFO]: Starting Minecraft server on *:25565
+[14:56:57] [Server thread/INFO]: Using epoll channel type
+[14:56:57] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[14:56:57] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[14:56:57] [Server thread/WARN]: **** FAILED TO BIND TO PORT!
+[14:56:57] [Server thread/WARN]: The exception was: io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Die Adresse wird bereits verwendet
+[14:56:57] [Server thread/WARN]: Perhaps a server is already running on that port?
+[14:56:57] [Server thread/ERROR]: Encountered an unexpected exception
+java.lang.IllegalStateException: Failed to bind to port
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:318) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1257) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:384) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Die Adresse wird bereits verwendet
+[14:56:57] [Server thread/ERROR]: This crash report has been saved to: /home/Johannes/Coding/Recreational/Minecraft-Server-Cloud/cloud/templates/template/crash-reports/crash-2025-12-05_14.56.57-server.txt
+[14:56:57] [Server thread/INFO]: Stopping server
+[14:56:57] [Server thread/INFO]: Saving players
+[14:56:58] [Server thread/INFO]: Saving worlds
+[14:56:58] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[14:56:58] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[14:56:58] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[14:56:58] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[14:56:58] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

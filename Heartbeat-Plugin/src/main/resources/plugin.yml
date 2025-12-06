@@ -1,0 +1,7 @@
+name: HeartbeatPlugin
+version: 1.0.0
+main: de.johannes.heartbeat.Heartbeat
+description: Heartbeat Plugin for MC Server Cloud
+author: Command_JO
+website: https://github.com/CommandJoo
+api-version: '1.21'

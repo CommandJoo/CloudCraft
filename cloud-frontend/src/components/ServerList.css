@@ -1,0 +1,205 @@
+#server-list {
+    position: relative;
+    background: var(--background-light);
+
+    height: 100%;
+    width: 60%;
+
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+
+    #server {
+        display: flex;
+        justify-content: space-between;
+        box-shadow: var(--shadow-small);
+        background-color: var(--background-lighter);
+
+        &.selected {
+            box-shadow: var(--shadow-small-inset);
+            border: var(--border);
+        }
+
+        padding: 1vh;
+        margin: 1vh;
+
+        border-radius: 10px;
+
+        #left {
+            display: flex;
+
+            #status {
+                position: relative;
+                margin-right: 1vh;
+                width: 20px;
+                height: 20px;
+                align-self: center;
+                border-radius: 50%;
+
+                &.none {
+                    box-shadow: 0 0 5px #AAAAAA;
+
+                    background-color: #AAAAAA;
+                }
+
+                &.green {
+                    box-shadow: 0 0 5px #00FF00;
+
+                    background-color: #00FF00;
+                }
+
+                &.yellow {
+                    box-shadow: 0 0 5px #FFAA00;
+
+                    background-color: #FFAA00;
+                }
+
+                &.red {
+                    box-shadow: 0 0 5px #FF0000;
+
+                    background-color: #FF0000;
+                }
+
+                #tooltip {
+                    position: absolute;
+                    left: 50%;
+                    top: -100%;
+
+                    color: var(--font-color);
+                    background-color: var(--background-lighter);
+                    box-shadow: var(--shadow-small);
+
+                    text-transform: capitalize;
+
+                    border-radius: 5px;
+
+                    padding: 0.5vh 0.5vw;
+
+                    transition: opacity .3s ease;
+                    opacity: 0;
+                    z-index: -100;
+                }
+
+                &:hover #tooltip {
+                    opacity: 1;
+                    z-index: 0;
+                }
+
+                &.red #tooltip {
+                    color: #FF0000;
+                }
+
+                &.green #tooltip {
+                    color: #00FF00;
+                }
+
+                &.yellow #tooltip {
+                    color: #FFAA00;
+                }
+
+                &.none #tooltip {
+                    color: #AAAAAA;
+                }
+            }
+
+            h1 {
+                font-size: 1.4rem;
+                font-weight: normal;
+            }
+        }
+
+        #right {
+            display: flex;
+
+            button {
+                outline: none;
+                border: none;
+                padding-left: 1vh;
+                padding-right: 1vh;
+
+                font-size: 1.2rem;
+
+                box-sizing: border-box;
+                border-radius: 5px;
+                box-shadow: var(--shadow-small);
+                background: var(--red);
+                color: var(--font-color--accent);
+            }
+
+            button:hover {
+                box-shadow: var(--shadow-small-inset);
+                background: var(--red-dark);
+                color: var(--font-color--accent);
+            }
+
+            hr {
+                margin-right: 1vh;
+                margin-left: 1vh;
+            }
+
+            p {
+                align-self: center;
+            }
+        }
+    }
+
+    #new-server {
+        right: 1vh;
+        bottom: 1vh;
+        position: absolute;
+        display: flex;
+        gap: 1vh;
+
+        input {
+            background-color: var(--background-lighter);
+            border: none;
+            outline: none;
+
+            font-size: 1.3rem;
+            box-sizing: border-box;
+            padding: 1vh;
+
+            box-shadow: var(--shadow-small);
+            border-radius: 5px;
+        }
+
+        select {
+            background-color: var(--background-lighter);
+            border: none;
+            outline: none;
+
+            font-size: 1.3rem;
+            box-sizing: border-box;
+            padding: 1vh;
+
+            box-shadow: var(--shadow-small);
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: var(--background-lighter);
+            border: none;
+            outline: none;
+
+            font-size: 1.3rem;
+            box-sizing: border-box;
+            padding: 1vh;
+
+            box-shadow: var(--shadow-small);
+            border-radius: 5px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                width: 3vh;
+            }
+        }
+
+        button:hover {
+            background-color: var(--background-light);
+            box-shadow: var(--shadow-small-inset);
+        }
+    }
+}
